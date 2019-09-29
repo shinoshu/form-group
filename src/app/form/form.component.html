@@ -7,12 +7,7 @@
       <app-company [company]="addressForm.controls['company']"></app-company>
       <div class="row">
         <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="First name" formControlName="firstName">
-            <mat-error *ngIf="addressForm.controls['firstName'].hasError('required')">
-              First name is <strong>required</strong>
-            </mat-error>
-          </mat-form-field>
+          <app-first-name [firstName]="addressForm.controls['firstName']"></app-first-name>
         </div>
         <div class="col">
           <mat-form-field class="full-width">
