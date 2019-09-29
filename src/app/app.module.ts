@@ -12,13 +12,15 @@ import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CompanyComponent } from './form/company/company.component';
 import { FirstNameComponent } from './form/first-name/first-name.component';
+import { LastNameComponent } from './form/last-name/last-name.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     CompanyComponent,
-    FirstNameComponent
+    FirstNameComponent,
+    LastNameComponent
   ],
   imports: [
     BrowserModule,
