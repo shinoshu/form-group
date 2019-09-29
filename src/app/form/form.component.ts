@@ -88,6 +88,7 @@ export class FormComponent {
   constructor(private fb: FormBuilder) {}
 
   onSubmit() {
-    alert('Thanks!');
+    const json = JSON.stringify(this.addressForm.value);
+    alert(json);
   }
 }
