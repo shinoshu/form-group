@@ -10,12 +10,13 @@
           <app-first-name [firstName]="addressForm.controls['firstName']"></app-first-name>
         </div>
         <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Last name" formControlName="lastName">
+          <app-last-name [lastName]="addressForm.controls['lastName']">
+            <!-- 表示がおかしい -->
             <mat-error *ngIf="addressForm.controls['lastName'].hasError('required')">
               Last name is <strong>required</strong>
             </mat-error>
-          </mat-form-field>
+            <!-- 表示がおかしい -->
+          </app-last-name>
         </div>
       </div>
       <div class="row">
